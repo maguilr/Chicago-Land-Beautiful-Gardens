@@ -7,7 +7,7 @@
 html {
     background-color: #fff;
     color: #555; /* this is the color of the font*/
-    font-family: 'Lato', 'Arial', sans-serif; /*If lato > Arial > sans-serif in case no connection*/
+    font-family: 'Montserrat', sans-serif; /*If lato > Arial > sans-serif in case no connection*/
     font-size: 20px; /*overall font size of the project*/
     font-weight: 300px;
     text-rendering: optimizeLegibility; /*makes font rendering perfect*/
@@ -17,3 +17,40 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+header {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0 , 0.7), rgba(0, 0, 0, 0.7)), url(img/chicago-land.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    margin:0;
+    color: #fff;
+    font-size: 240%; /* want it to be relative to the html text size, so here it is 40px */
+    font-weight: 100; /* gets rid of the bold*/
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+/*This positons everyhting within the header or the top page of the website*/
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    
+}
+
+
+
+
+
+
