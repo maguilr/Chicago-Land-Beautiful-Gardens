@@ -26,7 +26,8 @@ header {
 }
 
 h1 {
-    margin:0;
+    margin-top:0;
+    margin-bottom: 20px; /*push the buttons below the h1 element down*/
     color: #fff;
     font-size: 240%; /* want it to be relative to the html text size, so here it is 40px */
     font-weight: 100; /* gets rid of the bold*/
@@ -45,9 +46,61 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.btn {
+.btn:link, /*link psuedoclass just mean the 'a' element in it's normal state*/
+.btn:visited { /*once a link has been clicked*/
+    display: inline-block; /* allows attribute padding and margin */
+    padding: 10px 30px;
+    font-weight: 10;
+    text-decoration: none; /*gets rid of the underline for the link*/
+    border-radius: 200px; /*makes the button round*/
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.5s, border 0.5s, color 0.5s; /*the transition period from normal to the hover psudoclass*/
+}
+
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #74b9ff;
+    border: 1px solid #74b9ff;/*Same border as below to make the buttons the same size*/
+    margin-right: 15px; /*pushes the button on the right over 15px*/
     
 }
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #74b9ff;
+    color: #74b9ff;
+}
+
+
+.btn:hover, /*when the mouse is over the button*/
+.btn:active {
+    background-color: #d63031;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #d63031;
+    color: #fff;    
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #d63031;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
