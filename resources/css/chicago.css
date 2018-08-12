@@ -25,17 +25,55 @@ header {
     height: 100vh;
 }
 
-h1 {
-    margin-top:0;
-    margin-bottom: 20px; /*push the buttons below the h1 element down*/
-    color: #fff;
-    font-size: 240%; /* want it to be relative to the html text size, so here it is 40px */
+section { /*this is for white space to preserve the background color*/
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+h1,
+h2,
+h3 {
     font-weight: 100; /* gets rid of the bold*/
     text-transform: uppercase;
-    letter-spacing: 1px;
     word-spacing: 3px;
 }
 
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;/*push the buttons below the h1 element down*/
+    color: #fff;
+    font-size: 240%;/* want it to be relative to the html text size, so here it is 40px */
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 160%;
+    word-spacing: 1px;
+    text-align: center; /*centers the text*/
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+h2:after { /*This adds the blue line between the h2 and p. */
+    display: block;
+    height: 2px;
+    background-color: #74b9ff;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 /*This positons everyhting within the header or the top page of the website*/
 .hero-text-box {
@@ -127,8 +165,25 @@ h1 {
 
 }
 
+/* ----- PARAGRPAHS ------ */
+.long-copy {
+    line-height: 145%; /*Should be between 120 - 145 % -- this pretty much is like paragraph spacing*/
+    width: 60%;
+    margin-left: 20%; /*It is 15% because 60 + 20+ 20*/
+}
 
+.box p {
+    font-size: 80%;
+    line-height: 145%;
+}
 
+/* ----- ICONS ------- */
+.icon-big {
+    font-size: 340%;
+    display: block;
+    color: #74b9ff;
+    margin-bottom: 10px;
+}
 
 
 
