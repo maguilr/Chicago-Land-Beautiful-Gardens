@@ -19,7 +19,7 @@ html {
 }
 
 header {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0 , 0.7), rgba(0, 0, 0, 0.7)), url(img/chicago-land.jpg);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/chicago-land.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -68,7 +68,7 @@ h3 {
 h2:after { /*This adds the blue line between the h2 and p. */
     display: block;
     height: 2px;
-    background-color: #74b9ff;
+    background-color: #aad8f0;
     content: " ";
     width: 150px;
     margin: 0 auto;
@@ -99,33 +99,33 @@ h2:after { /*This adds the blue line between the h2 and p. */
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #74b9ff;
-    border: 1px solid #74b9ff;/*Same border as below to make the buttons the same size*/
+    background-color: #aad8f0;
+    border: 1px solid #aad8f0;/*Same border as below to make the buttons the same size*/
     margin-right: 15px; /*pushes the button on the right over 15px*/
     
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #74b9ff;
-    color: #74b9ff;
+    border: 1px solid #aad8f0;
+    color: #aad8f0;
 }
 
 
 .btn:hover, /*when the mouse is over the button*/
 .btn:active {
-    background-color: #d63031;
+    background-color: #ff0004;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #d63031;
+    border: 1px solid #ff0004;
     color: #fff;    
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #d63031;
+    border: 1px solid #ff0004;
 }
 
 
@@ -161,7 +161,7 @@ h2:after { /*This adds the blue line between the h2 and p. */
 
 .main-nav li a:hover,
 .main-nav li a:active { 
-    border-bottom: 2px solid #74b9ff;
+    border-bottom: 2px solid #aad8f0;
 
 }
 
@@ -172,6 +172,11 @@ h2:after { /*This adds the blue line between the h2 and p. */
     margin-left: 20%; /*It is 15% because 60 + 20+ 20*/
 }
 
+.section-features .long-copy {
+    margin-bottom: 30px; /*gives a little bit a space between the paragraph and the icons.*/
+}
+
+
 .box p {
     font-size: 80%;
     line-height: 145%;
@@ -181,9 +186,51 @@ h2:after { /*This adds the blue line between the h2 and p. */
 .icon-big {
     font-size: 340%;
     display: block;
-    color: #74b9ff;
+    color: #aad8f0;
     margin-bottom: 10px;
+    text-align: center;
 }
+
+
+/* ----- Fields section ------- */
+.section-fields {
+    padding: 0; /*gets rid of the padding automatically set for a title*/
+}
+
+.fields-showcase {
+    list-style: none; /*for no bullet points*/
+    width: 100%; /*we want the browser with to be full for this*/
+}
+
+.fields-showcase li {
+    display: block;
+    float: left;
+    width: 25%; /*has to add up to the width of 100% in this case to have them all the same size*/
+}
+
+.field-photo {
+    width: 100%; /*Adjusts the size of the photo*/
+    margin: 0px;
+    overflow: hidden; /*this hides the overflow from scale keeping it within the container*/
+    background-color: black; /*makes the opacity work with a slight balck tint*/
+}
+
+.field-photo img {
+    opacity: 0.7;/*makes the photo see through so whatever is the backgorund it will take on that color*/
+    width: 100%;
+    height: auto;
+    transform: scale(1.15); /*this means the image will be 115% big. This makes them bigger than the browser (overflows)*/
+    transition: transform 0.4s, opacity 0.4s; /*animates the image with it's respective name*/
+}
+
+.field-photo img:hover {
+    transform: scale(1.04); /*this makes the images images go back to their original size.*/
+    opacity: 1; /*restores the opacity back to normal*/
+}
+
+
+
+
 
 
 
