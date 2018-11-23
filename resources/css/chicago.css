@@ -2,28 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}/*gets ride of all the margins and paddings*/
 
 html {
     background-color: #fff;
     color: #555; /* this is the color of the font*/
-    font-family: 'Montserrat', sans-serif; /*If lato > Arial > sans-serif in case no connection*/
+    font-family: 'Montserrat','Arial', sans-serif; /*If lato > Arial > sans-serif in case no connection*/
     font-size: 20px; /*overall font size of the project*/
     font-weight: 300px;
     text-rendering: optimizeLegibility; /*makes font rendering perfect*/
 }
+
+.clearfix {zoom:everyone 1}
+.clearfix {
+    content: '.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-header {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/chicago-land.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
 
 section { /*this is for white space to preserve the background color*/
     padding: 80px 0;
@@ -73,6 +77,15 @@ h2:after { /*This adds the blue line between the h2 and p. */
     width: 150px;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+/* -------- HEADER ------- */
+
+header {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(255, 0, 1, 0.7));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 /*This positons everyhting within the header or the top page of the website*/
@@ -227,6 +240,30 @@ h2:after { /*This adds the blue line between the h2 and p. */
     transform: scale(1.04); /*this makes the images images go back to their original size.*/
     opacity: 1; /*restores the opacity back to normal*/
 }
+
+
+
+
+/*-------- How it works section ---------*/
+
+
+
+.steps-box:first-child {
+    
+}
+
+.steps-box:last-child {
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 
