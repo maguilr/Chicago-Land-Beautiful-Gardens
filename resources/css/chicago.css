@@ -37,6 +37,18 @@ section { /*this is for white space to preserve the background color*/
     padding: 1%;
 }
 
+
+/* -------- HEADER ------- */
+
+header {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0), rgba(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/*--------- TEXT HEADERS ------------*/
 h1,
 h2,
 h3 {
@@ -49,8 +61,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 20px;/*push the buttons below the h1 element down*/
     color: #fff;
-    font-size: 240%;/* want it to be relative to the html text size, so here it is 40px */
-    word-spacing: 3px;
+    font-size: 260%;/* want it to be relative to the html text size, so here it is 40px */
     letter-spacing: 1px;
 }
 
@@ -59,7 +70,6 @@ h2 {
     word-spacing: 1px;
     text-align: center; /*centers the text*/
     margin-bottom: 20px;
-    letter-spacing: 1px;
 }
 
 h3 {
@@ -73,20 +83,13 @@ h2:after { /*This adds the blue line between the h2 and p. */
     display: block;
     height: 2px;
     background-color: #aad8f0;
-    content: " ";
+    content: " "; /*Have to specify content for the after psuedoclass*/
     width: 150px;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-/* -------- HEADER ------- */
 
-header {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(255, 0, 1, 0.7));
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
 
 /*This positons everyhting within the header or the top page of the website*/
 .hero-text-box {
@@ -115,7 +118,7 @@ header {
     background-color: #aad8f0;
     border: 1px solid #aad8f0;/*Same border as below to make the buttons the same size*/
     margin-right: 15px; /*pushes the button on the right over 15px*/
-    
+    color: black;
 }
 
 .btn-ghost:link,
@@ -139,14 +142,17 @@ header {
 .btn-full:hover,
 .btn-full:active {
     border: 1px solid #ff0004;
+    color: white;
 }
 
 
-/*Formatting Logo & navigation*/
+/*----- LOGO & NAVIGATION -------*/
 .logo {
-    height: 160px;
+    position: absolute;
+    left: 30px;
+    height: 120px;
     width: auto;
-    float: left; /*moves the logo to the left side of the page*/
+    float: left;
     margin-top: 30px;
 }
 
@@ -182,7 +188,7 @@ header {
 .long-copy {
     line-height: 145%; /*Should be between 120 - 145 % -- this pretty much is like paragraph spacing*/
     width: 60%;
-    margin-left: 20%; /*It is 15% because 60 + 20+ 20*/
+    margin-left: 20%; /*It is 20% because 60 + 20+ 20. Essentially you need to adjust for the amount of text*/
 }
 
 .section-features .long-copy {
