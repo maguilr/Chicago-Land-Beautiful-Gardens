@@ -173,7 +173,7 @@ h2:after { /*This adds the blue line between the h2 and p. */
     padding: 8px 0; /* 8 padding top and bottom to push line below and 0 on the sides*/
     color: #fff;
     text-transform: uppercase;
-    font-size: 90%; /*again, we want it relative to the 20px format*/
+    font-size: 105%; /*again, we want it relative to the 20px format*/
     border-bottom: 2px solid transparent; /*need this transparancy when using the transition property or else it wont be smooth*/
     transition: border-bottom 0.8s;
 }
