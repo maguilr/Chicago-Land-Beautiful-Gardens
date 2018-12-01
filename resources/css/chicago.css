@@ -45,6 +45,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 
@@ -211,57 +212,40 @@ h2:after { /*This adds the blue line between the h2 and p. */
 }
 
 
-/* ----- Fields section ------- */
-.section-fields {
-    padding: 0; /*gets rid of the padding automatically set for a title*/
+/* -------------------------------- */
+/* Reviews Section */
+/* -------------------------------- */
+
+.section-reviews {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/sprout-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
+    background-attachment: fixed;
 }
 
-.fields-showcase {
-    list-style: none; /*for no bullet points*/
-    width: 100%; /*we want the browser with to be full for this*/
+blockquote {
+    padding: 2%;
+    font-style:italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
 }
 
-.fields-showcase li {
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
     display: block;
-    float: left;
-    width: 25%; /*has to add up to the width of 100% in this case to have them all the same size*/
+    position: absolute; /*for 'position: absolute;' to work you need to have 'position: relative' as the parent.*/
+    top: -5px;
+    left: -5px;
 }
 
-.field-photo {
-    width: 100%; /*Adjusts the size of the photo*/
-    margin: 0px;
-    overflow: hidden; /*this hides the overflow from scale keeping it within the container*/
-    background-color: black; /*makes the opacity work with a slight balck tint*/
+cite {
+    font-size: 90%;
+    margin-top: 25px;
 }
-
-.field-photo img {
-    opacity: 0.7;/*makes the photo see through so whatever is the backgorund it will take on that color*/
-    width: 100%;
-    height: auto;
-    transform: scale(1.15); /*this means the image will be 115% big. This makes them bigger than the browser (overflows)*/
-    transition: transform 0.4s, opacity 0.4s; /*animates the image with it's respective name*/
-}
-
-.field-photo img:hover {
-    transform: scale(1.04); /*this makes the images images go back to their original size.*/
-    opacity: 1; /*restores the opacity back to normal*/
-}
-
-
-
-
-/*-------- How it works section ---------*/
-
-
-
-.steps-box:first-child {
-    
-}
-
-.steps-box:last-child {
-    
-}
-
 
 
 
