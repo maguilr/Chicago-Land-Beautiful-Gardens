@@ -102,7 +102,8 @@ h2:after { /*This adds the blue line between the h2 and p. */
 }
 
 .btn:link, /*link psuedoclass just mean the 'a' element in it's normal state*/
-.btn:visited { /*once a link has been clicked*/
+.btn:visited,/*once a link has been clicked*/
+input[type=submit]{ /*including the sign up button*/
     display: inline-block; /* allows attribute padding and margin */
     padding: 10px 30px;
     font-weight: 10;
@@ -115,7 +116,8 @@ h2:after { /*This adds the blue line between the h2 and p. */
 
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]{/*including the sign up button*/
     background-color: #aad8f0;
     border: 1px solid #aad8f0;/*Same border as below to make the buttons the same size*/
     margin-right: 15px; /*pushes the button on the right over 15px*/
@@ -124,19 +126,21 @@ h2:after { /*This adds the blue line between the h2 and p. */
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #aad8f0;
+    border: 2px solid #aad8f0;
     color: #aad8f0;
 }
 
 
 .btn:hover, /*when the mouse is over the button*/
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #ff0004;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #ff0004;
+    border: 2px solid #ff0004;
     color: #fff;    
 }
 
@@ -248,8 +252,33 @@ cite {
 }
 
 
+/* -------------------------------- */
+/* CONTACT FORM */
+/* -------------------------------- */
 
 
+.section-form {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
 
 
 
