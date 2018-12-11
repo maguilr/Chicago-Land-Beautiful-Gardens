@@ -281,6 +281,50 @@ textarea {
 }
 
 
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;} /*This psuedoclass gets rid of the blue glow around borders that is added by chrome.*/
+
+/* -------------------------------- */
+/* FOOTER SECTION */
+/* -------------------------------- */
+
+footer {
+    background-color: #333;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: none; /*All the links were specified to have a border, so get rid of it*/
+    color: rgba(255, 255, 255, 0.83)
+}
 
 
 
