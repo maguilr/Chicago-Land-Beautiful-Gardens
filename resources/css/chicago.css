@@ -293,7 +293,8 @@ input[type=checkbox] {
 
 footer {
     background-color: #333;
-    padding: 10px;
+    padding: 5px;
+    font-size: 80%;
 }
 
 .footer-nav {
@@ -337,7 +338,6 @@ footer {
 footer p {
     color: #888;
     text-align: center;
-    font-size: 80%;
     margin-top: 5px;
 }
 
@@ -348,27 +348,29 @@ footer p {
 #linkedin:hover,
 #linkedin:active {
     color: #007bb5;
-    transition: 0.2s;
 }
 
 #facebook:hover,
 #facebook:active {
     color: #3b5998;
-    transition: 0.2s;
 }
 
 #instagram:hover,
 #instagram:active {
     color: #c32aa3;
-    transition: 0.2s;
 }
 
 #snapchat:hover,
 #snapchat:active {
     color: #fffc00;
-    transition: 0.2s;
 }
 
+#linkedin,
+#facebook,
+#instagram,
+#snapchat {
+    transition: 0.2s;    
+}
 
 
 
