@@ -293,6 +293,7 @@ input[type=checkbox] {
 
 footer {
     background-color: #333;
+    padding: 10px;
 }
 
 .footer-nav {
@@ -323,16 +324,50 @@ footer {
 .social-links li a:visited{
     text-decoration: none;
     border: none; /*All the links were specified to have a border, so get rid of it*/
-    color: rgba(255, 255, 255, 0.83)
+    color: #888;
+    transition: 0.2s;
 }
 
 
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #e5e4e4;
+}
 
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 5px;
+}
 
+.social-links {
+    font-size: 140%;
+}
 
+#linkedin:hover,
+#linkedin:active {
+    color: #007bb5;
+    transition: 0.2s;
+}
 
+#facebook:hover,
+#facebook:active {
+    color: #3b5998;
+    transition: 0.2s;
+}
 
+#instagram:hover,
+#instagram:active {
+    color: #c32aa3;
+    transition: 0.2s;
+}
 
+#snapchat:hover,
+#snapchat:active {
+    color: #fffc00;
+    transition: 0.2s;
+}
 
 
 
