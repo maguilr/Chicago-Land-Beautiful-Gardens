@@ -1,16 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }/*gets ride of all the margins and paddings*/
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555; /* this is the color of the font*/
     font-family: 'Montserrat','Arial', sans-serif; /*If lato > Arial > sans-serif in case no connection*/
     font-size: 20px; /*overall font size of the project*/
     font-weight: 300px;
     text-rendering: optimizeLegibility; /*makes font rendering perfect*/
+    overflow-x: hidden;
 }
 
 .clearfix {zoom:everyone 1}
@@ -42,6 +45,7 @@ section { /*this is for white space to preserve the background color*/
 /* -------- HEADER ------- */
 
 header {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0)), to(rgba(0, 0, 0)));
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0), rgba(0, 0, 0));
     background-size: cover;
     background-position: center;
@@ -99,6 +103,7 @@ h2:after { /*This adds the blue line between the h2 and p. */
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -112,6 +117,7 @@ input[type=submit]{ /*including the sign up button*/
     border-radius: 200px; /*makes the button round*/
     color: #fff;
     text-transform: uppercase;
+    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
     transition: background-color 0.5s, border 0.5s, color 0.5s; /*the transition period from normal to the hover psudoclass*/
 }
 
@@ -181,6 +187,7 @@ input[type=submit]:active{
     text-transform: uppercase;
     font-size: 105%; /*again, we want it relative to the 20px format*/
     border-bottom: 2px solid transparent; /*need this transparancy when using the transition property or else it wont be smooth*/
+    -webkit-transition: border-bottom 0.8s;
     transition: border-bottom 0.8s;
 }
 
@@ -222,6 +229,7 @@ input[type=submit]:active{
 /* -------------------------------- */
 
 .section-reviews {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/sprout-background.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/sprout-background.jpg);
     background-size: cover;
     background-position: center;
@@ -259,6 +267,7 @@ cite {
 
 
 .section-form {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.05)));
     background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 }
 
@@ -327,6 +336,7 @@ footer {
     text-decoration: none;
     border: none; /*All the links were specified to have a border, so get rid of it*/
     color: #888;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -370,6 +380,7 @@ footer p {
 #facebook,
 #instagram,
 #snapchat {
+    -webkit-transition: 0.2s;
     transition: 0.2s;    
 }
 
