@@ -62,6 +62,27 @@
     section { padding: 25px 0}
     .contact-form {width: 100% }
     
+    h1 {font-size: 160%;}
+    h2 {font-size: 130%;}
+    
+    .section-reviews { height: 125vh;}
+    
+    blockquote:before { font-size: 300%;}
+    
+    .social-links li {
+        margin-right: 20px;
+        margin-bottom:20px;
+    }
+    .footer-nav li {
+        margin-top: 20px;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        margin-top: 50px;
+    }
+    
+
 }
 
 
